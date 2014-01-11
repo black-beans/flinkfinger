@@ -1,6 +1,6 @@
 /*
- *= require 'modernizr-2.6.2'
- *= require 'jquery-1.10.2'
+ *= require './vendor/modernizr-2.6.2.min'
+ *= require './vendor/jquery-1.10.2.min'
  *= require_self
  */
 
