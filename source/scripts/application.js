@@ -1,7 +1,11 @@
 /*
  *= require './vendor/modernizr-2.6.2.min'
  *= require './vendor/jquery-1.10.2.min'
+ *= require './vendor/wordcloud'
+ *= require bootstrap
  *= require_self
+ *= require_tree ./base
+ *= require_tree ./modules
  */
 
 // Avoid `console` errors in browsers that lack a console.
@@ -26,5 +30,3 @@
         }
     }
 }());
-
-// Place any jQuery/helper plugins in here.

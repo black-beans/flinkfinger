@@ -1,0 +1,17 @@
+section#services {
+}
+
+#wordcloud {
+  @include background-image(linear-gradient(#b4bcbf, #fdfdfd));
+
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+  height: 400px;
+
+  canvas {
+    width: 100%;
+    height: 400px;
+  }
+}

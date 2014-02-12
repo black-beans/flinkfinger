@@ -5,6 +5,7 @@
 # Susy grids in Compass
 # First: gem install susy
 # require 'susy'
+require 'bootstrap-sass'
 
 # Change Compass configuration
 # compass_config do |config|
@@ -78,6 +79,8 @@ set :images_dir, 'images'
 # Build-specific configuration
 #
 configure :build do
+
+  activate :clementine
 
   # Enable live reload while working locally
   activate :livereload

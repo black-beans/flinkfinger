@@ -1,0 +1,33 @@
+section#about {
+  .me {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+
+    .picture {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      z-index: 1;
+
+      width: 200px;
+      height: 200px;
+      margin: auto;
+
+      img {
+        border-radius: 50%;
+        border: #F6F6F6 10px solid;
+        width: 240px;
+        height: 240px;
+      }
+
+      hr {
+        margin: 0 !important;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        z-index: 0;
+      }
+    }
+  }
+}

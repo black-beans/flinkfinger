@@ -1,24 +1,130 @@
 !!!
-/[if lt IE 7] <html class='no-js lt-ie9 lt-ie8 lt-ie7'>
-/[if IE 7] <html class='no-js lt-ie9 lt-ie8'>
-/[if IE 8] <html class='no-js lt-ie9'>
-/ [if gt IE 8]><!
-%html.no-js
-  / <![endif]
+%html.no-js{ lang: 'de' }
   %head
-    %meta{charset: 'utf-8'}/
-    %meta{content: 'IE=edge', 'http-equiv' => 'X-UA-Compatible'}/
-    %title FlinkFinger GmbH
-    %meta{content: '', name: 'description'}/
-    %meta{content: 'width=device-width, initial-scale=1', name: 'viewport'}/
+    %meta{ charset: 'utf-8'}
+    %meta{ content: 'IE=edge', 'http-equiv' => 'X-UA-Compatible' }
+    %title FlinkFinger - Softwareentwicklung aus Leidenschaft
+    %meta{ content: 'FlinkFinger - Softwareentwicklung aus Leidenschaft', name: 'description' }
+    %meta{ content: 'Anforderungsanalyse', name: 'Keywords' }
+    %meta{ content: 'width=device-width, initial-scale=1', name: 'viewport' }
 
-    / Place favicon.ico and apple-touch-icon.png in the root directory
     = stylesheet_link_tag 'application'
   %body
-    /[if lt IE 7]
-      <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+    %article
+      %section#home
+        .logo
+          = image_tag('flinkfinger.png', alt: 'FlinkFinger GmbH')
+
+      %header#header
+        %nav.navbar
+          .container
+            %button#mobileMenu.fa.fa-bars{ type: 'button', data: { toggle: 'collapse', target: '.navbar-collapse' }}
+            .navbar-header
+              %a.navbar-brand.scrollTo{ href: '#home' }
+                = image_tag('flinkfinger-ls.png', alt: 'FlinkFinger GmbH')
+            .navbar-collapse.collapse
+              %ul.nav.navbar-nav.navbar-right
+                %li
+                  %a.scrollTo{ href: '#about' } FlinkFinger
+                %li
+                  %a.scrollTo{ href: '#services' } Dienstleistungen
+                %li
+                  %a.scrollTo{ href: '#references' } Referenzen
+                %li
+                  %a.scrollTo{ href: '#contact' } Kontakt
+
+      %section#about
+        .container
+          %h2 Über FlinkFinger
+
+          %p Die flinken Finger gehören zu
+
+          .me.text-center
+            .picture
+              = image_tag 'michael-kessler.jpg', class: 'img-responsive', alt: 'Michael Kessler'
+            %hr
+
+          %p Ich bin ein leidenschaftlicher Software-Entwickler, Open-Source Enthusiast und zertifizierter Scrum-Master.
+
+          .profile.xing
+            = link_to 'https://www.xing.com/profile/Michael_Kessler20' do
+              Xing
+
+          .profile.linkedin
+            = link_to 'ch.linkedin.com/pub/michael-kessler/49/11/ab6' do
+              LinkedIn
+
+      %section#services
+        .container
+          %h2 Dienstleistungen
+          %p Ich bitte folgende Dienstleistungen rund um die Softwareentwicklung an:
+
+          %dl
+            %dt Anforderungsanalyse
+            %dd Aufnahme ihrer Anforderungen in Gespräche/Workshops, welche anschliessend analysiert und in eine strukturierte Form gebracht werden, welche als Grundlage zur Entwicklung des Systemes dienen. Je nach Projekt kommen unterschiedliche Prozesse zum Zug, welche ausserdem optimal an die Bedürfnisse angepasst werden.
+
+            %dt Projektleitung
+            %dd Zusammenstellung des Teams; Organisation, Zuweisung und Kontrolle von Anforderungen; Steuerung und Visualisierung von der Informationen; Dokumentation und Schulung - wichtig um nicht den Überblick und damit die Entscheidungsfähigkeit im Projekt zu verlieren. Einsatz von agilen Prozessen mit kurzen Entwicklungszyklen für schnelle Rückmeldungen und daher auch frühzeitige Fehlererkennung.
+
+            %dt Architektur
+            %dd Zusammenstellung der Komponenten, welche durch ein optimales Zusammenspiel die Grundlage des Systemes bilden. Integration, Test und Dokumentation sind elementar, damit die Entwicklung reibungslos abläuft und die nichtfunktionalen Anforderungen erfüllt werden. Umsetzung von Prototypen zur Verifizierung neuer Ansätze.
+
+            %dt Softwareentwicklung
+            %dd Umsetzung der architekturkonformen, funktionalen Anforderungen. Dazu gehören auch das Schreiben von Testfällen um die Funktionalität automatisch zu verifizieren und damit den Betrieb und die Weiterentwicklung sicherzustellen.
+
+          %h3 Technologien
+          %p Als Full-Stack Software-Entwickler habe ich Kentnisse aller Technologien, welche nötig sind um erfolgreich Software Projekte umzusetzten.
+
+      #wordcloud
+        %canvas
+
+      .container
+        %h3 Spezialgebiete
+
+        %p Ich bin spezialisiert auf die Entwicklung von Webapplikationen mit HTML5, CSS3, JavaScript/CoffeeScript, am liebsten mit einem Framework wie Backone, Marionette, Ember und AngularJS. Als Backend verwende ich Ruby on Rails und Node. Alles selbstverstuandlich testgetrieben.
+
+        %a{ href: 'http://www.w3.org/html/logo/' }
+          %img{ src: 'http://www.w3.org/html/logo/badge/html5-badge-h-connectivity-css3-device-graphics-multimedia-performance-semantics-storage.png', width: '357', height: '64' }
+
+      %section#references
+        .container
+          %h2 Referenzen
+          %p In den letzten Jahrzehnten durfte ich an unzähligen Projekten mitarbeiten.
+
+          %h2 Open Source
+          %p Open-Source ist ein wichtiger Teil meiner Arbeit, weil...
+
+          %ul
+            %li Ich mein technisches Können demonstrieren kann.
+            %li Ich mich trotz meiner 1-Mann-Firma mit Gleichgesinnten austauschen kann.
+            %li Ich durch meine Kontakte auf ein hochkompetentes Netzwerk von Spezialisten zurückgreifen kann.
+
+      %section#contact
+        %address
+          %h2 Kontakt
+          %ul
+            %li
+              FlinkFinger GmbH
+              %br
+              Schulgasse 8
+              %br
+              5620 Bremgarten
+              %br
+              Schweiz
+            %li
+              %abbr{ title: 'Telefon' } T:
+              +41 56 536 33 62
+            %li
+              %abbr{ title: 'Mobil' } M:
+              +41 79 244 55 61
+            %li
+              %a{ href: "mailto:hello@flinkfinger.com" } hello@flinkfinger.com
+
+        #gmap
 
     = javascript_include_tag 'application'
+
+    %script{ src: 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&callback=initializeMap' }
 
     :javascript
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
