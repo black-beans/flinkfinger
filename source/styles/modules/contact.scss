@@ -1,19 +1,35 @@
 section#contact {
-  position: relative;
+  .container {
+    position: relative;
+  }
 
   address {
+    border-radius: 3px;
     position: absolute;
     z-index: 2;
 
     left: 20px;
     top: 50px;
-    width: 300px;
+    width: 280px;
 
-    padding: 20px;
+    padding: 25px 40px;
     background: #fff;
 
+    h2 {
+      margin-top: 0;
+    }
+
     ul {
+      padding: 0;
       list-style-type: none;
+
+      li {
+        font-size: 20px;
+
+        &.space {
+          padding-bottom: 12px;
+        }
+      }
     }
   }
 

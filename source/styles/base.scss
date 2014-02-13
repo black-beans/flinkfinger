@@ -1,4 +1,46 @@
 body {
   margin: 0;
   padding: 0;
+
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'Bobcaygeon-Plain-BRK';
+  src: url('/fonts/Bobcaygeon-Plain-BRK.ttf.woff') format('woff'),
+       url('/fonts/Bobcaygeon-Plain-BRK.ttf.svg#Bobcaygeon-Plain-BRK') format('svg'),
+       url('/fonts/Bobcaygeon-Plain-BRK.ttf.eot'),
+       url('/fonts/Bobcaygeon-Plain-BRK.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, dt {
+  font-family: 'Bobcaygeon-Plain-BRK';
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5, h6 {
+  font-size: 20px;
+}
+
+dt {
+  font-size: 30px;
 }

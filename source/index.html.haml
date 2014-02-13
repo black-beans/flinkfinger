@@ -8,12 +8,13 @@
     %meta{ content: 'Anforderungsanalyse', name: 'Keywords' }
     %meta{ content: 'width=device-width, initial-scale=1', name: 'viewport' }
 
+    %link{ href: 'http://fonts.googleapis.com/css?family=Droid+Sans', rel: 'stylesheet', type: 'text/css' }
+
     = stylesheet_link_tag 'application'
   %body
     %article
       %section#home
-        .logo
-          = image_tag('flinkfinger.png', alt: 'FlinkFinger GmbH')
+        = image_tag('flinkfinger.png', class: 'img-responsive', alt: 'FlinkFinger GmbH')
 
       %header#header
         %nav.navbar
@@ -35,16 +36,14 @@
 
       %section#about
         .container
-          %h2 Über FlinkFinger
-
-          %p Die flinken Finger gehören zu
+          %p.text-center Die flinken Finger gehören zu
 
           .me.text-center
             .picture
               = image_tag 'michael-kessler.jpg', class: 'img-responsive', alt: 'Michael Kessler'
             %hr
 
-          %p Ich bin ein leidenschaftlicher Software-Entwickler, Open-Source Enthusiast und zertifizierter Scrum-Master.
+          %p.text-center Ich bin ein leidenschaftlicher Softwareentwickler, Open-Source Enthusiast und Scrum-Master.
 
           .profile.xing
             = link_to 'https://www.xing.com/profile/Michael_Kessler20' do
@@ -100,25 +99,26 @@
             %li Ich durch meine Kontakte auf ein hochkompetentes Netzwerk von Spezialisten zurückgreifen kann.
 
       %section#contact
-        %address
-          %h2 Kontakt
-          %ul
-            %li
-              FlinkFinger GmbH
-              %br
-              Schulgasse 8
-              %br
-              5620 Bremgarten
-              %br
-              Schweiz
-            %li
-              %abbr{ title: 'Telefon' } T:
-              +41 56 536 33 62
-            %li
-              %abbr{ title: 'Mobil' } M:
-              +41 79 244 55 61
-            %li
-              %a{ href: "mailto:hello@flinkfinger.com" } hello@flinkfinger.com
+        .container
+          %address
+            %h2 Kontakt
+            %ul
+              %li.space
+                FlinkFinger GmbH
+                %br
+                Schulgasse 8
+                %br
+                5620 Bremgarten
+                %br
+                Schweiz
+              %li
+                %abbr{ title: 'Telefon' } T:
+                +41 56 536 33 62
+              %li.space
+                %abbr{ title: 'Mobil' } M:
+                +41 79 244 55 61
+              %li
+                %a{ href: "mailto:hello@flinkfinger.com" } hello@flinkfinger.com
 
         #gmap
 

@@ -1,5 +1,6 @@
 header {
   position: relative;
+  z-index: 99;
 
   left: 0;
   right: 0;
@@ -12,7 +13,9 @@ header {
   padding: 0;
 
   color: #fff;
-  z-index: 99;
+  background-color: #f1f1f1;
+  border-top: 1px solid rgb(159, 41, 39);
+  border-bottom: 1px solid rgb(159, 41, 39);
 
   &.fixed {
     position: fixed;
