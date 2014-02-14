@@ -5,6 +5,7 @@ section#services {
     .label {
       background: rgb(159, 41, 39);
       font-size: 1.1em;
+      margin-bottom: 10px;
 
       a {
         @include text-shadow(rgba(black, 0.8) 1px 1px 0);

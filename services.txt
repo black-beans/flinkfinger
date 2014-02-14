@@ -1,0 +1,64 @@
+wordle.net
+
+
+Server:15:9f2927
+Linux:13:000000
+OS X:13:000000
+Netzwerk:13:9f2927
+TCP:6:000000
+IP:6:000000
+DNS:8:000000
+HTTP:12:000000
+Hosting:14:9f2927
+Redundanz:10:000000
+Verfügbarkeit:12:000000
+Cloud:10:9f2927
+Amazon:10:000000
+Google Apps:10:000000
+Datenmodelierung:10:9f2927
+E/R:10:000000
+UML:10:000000
+ORM:10:000000
+Geschäftslogik:10:9f2927
+OOA/OOD:10:000000
+State Machine:10:000000
+Payment:10:000000
+SQL:10:9f2927
+PostgreSQL:10:000000
+MySQL:14:000000
+NoSQL:12:9f2927
+MongoDB:12:000000
+Redis:8:000000
+Memcached:10:000000
+MVC:19:9f2927
+Rails:17:000000
+Marionette:14:000000
+AngularJS:10:000000
+REST API:20:9f2927
+JSON:10:000000
+XML:8:000000
+Maturity Level:10:000000
+Testing:20:9f2927
+Unit Tests:14:000000
+Integration Tests:15:000000
+RSpec:14:000000
+Jasmine:10:000000
+Cucumber:8:000000
+Automatisierung:18:9f2927
+Tests:14:000000
+Qualitätssicherung:10:9f2927
+Webapplikationen:22:000000
+JavaScript:10:000000
+CoffeeScript:15:000000
+Backbone:18:000000
+HTML5:18:9f2927
+Semantik:16:000000
+Markup:14:000000
+HAML:17:000000
+API:12:000000
+CSS3:16:9f2927
+Browser:15:000000
+SASS:12:000000
+Compass:10:000000
+Usability:12:9f2927
+Analyse:16:000000
