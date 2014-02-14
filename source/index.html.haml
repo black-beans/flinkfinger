@@ -21,7 +21,8 @@
           .container
             %button#mobileMenu.fa.fa-bars{ type: 'button', data: { toggle: 'collapse', target: '.navbar-collapse' }}
             .navbar-header
-              = image_tag('flinkfinger-ls.png', alt: 'FlinkFinger GmbH')
+              %a{ href: '#about' }
+                = image_tag('flinkfinger-ls.png', alt: 'FlinkFinger GmbH')
             .navbar-collapse.collapse
               %ul.nav.navbar-nav.navbar-right
                 %li
@@ -86,38 +87,37 @@
           %h3 Technologien
           %p Als Full-Stack Software-Entwickler habe ich Kentnisse aller Technologien, welche nötig sind um erfolgreich Software Projekte umzusetzten.
 
-      #wordcloud
-        %canvas
+          #wordcloud
+            %canvas
 
-      .container
-        %i.fa.fa-html5.fa-4x
-        %i.fa.fa-css3.fa-4x
+          %i.fa.fa-html5.fa-4x
+          %i.fa.fa-css3.fa-4x
 
-        %h3 Spezialgebiete
+          %h3 Spezialgebiete
 
-        %p Ich bin spezialisiert auf die Entwicklung von Webapplikationen mit den folgenden Technologien:
+          %p Ich bin spezialisiert auf die Entwicklung von Webapplikationen mit den folgenden Technologien:
 
-        %ul.list-inline.specialized
-          %li.label= link_to 'HTML5', 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5'
-          %li.label= link_to 'CSS3', 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'
-          %li.label= link_to 'JavaScript', 'https://developer.mozilla.org/en/docs/Web/JavaScript'
-          %li.label= link_to 'CoffeeScript', 'http://coffeescript.org/'
-          %li.label= link_to 'Ruby', 'https://www.ruby-lang.org/en/'
-          %li.label= link_to 'Node', 'http://nodejs.org/'
+          %ul.list-inline.specialized
+            %li.label= link_to 'HTML5', 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5'
+            %li.label= link_to 'CSS3', 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'
+            %li.label= link_to 'JavaScript', 'https://developer.mozilla.org/en/docs/Web/JavaScript'
+            %li.label= link_to 'CoffeeScript', 'http://coffeescript.org/'
+            %li.label= link_to 'Ruby', 'https://www.ruby-lang.org/en/'
+            %li.label= link_to 'Node', 'http://nodejs.org/'
 
-        %p
-          Um nicht das Rad ständig neu zu erfinden, setze ich moderne Frameworks wie z.B.
-          = succeed ',' do
-            %em= link_to 'Backbone', 'http://backbonejs.org/'
-          %em= link_to 'Marionette', 'http://marionettejs.com/'
-          und
-          %em= link_to 'Ruby on Rails', 'https://developer.mozilla.org/en/docs/Web/JavaScript'
-          ein.
+          %p
+            Um nicht das Rad ständig neu zu erfinden, setze ich moderne Frameworks wie z.B.
+            = succeed ',' do
+              %em= link_to 'Backbone', 'http://backbonejs.org/'
+            %em= link_to 'Marionette', 'http://marionettejs.com/'
+            und
+            %em= link_to 'Ruby on Rails', 'https://developer.mozilla.org/en/docs/Web/JavaScript'
+            ein.
 
-        %blockquote
-          Technologien ändern sich stetig, Programmiersprachen kommen und gehen; dir darunterliegenden Konzepte sind oft die gleichen und entwickeln sich langsamer. Durch kontinuierliches Lernen und Experimentieren bleibe ich am Puls der Zeit und entwickle mich immer weiter. In meiner bisherigen Laufbahn habe ich grosse, produktive Systeme in folgenden Technologien, Sprachen, Frameworks und Applikationsservern entwickelt:
-          %em Assembler, Basic, C, C++, Pascal, Lingo, TCL, Delphi, PHP, ASP, ColdFusion, Java, JEE, JSF, XML, XSLT, SOAP, RPC, Python, ContentServ, JBoss, Vignette, Wordpress, Radiant, Spring, Struts
-          und viele mehr die ich schon längst wieder vergessen habe...
+          %blockquote
+            Technologien ändern sich stetig, Programmiersprachen kommen und gehen; die darunterliegenden Konzepte sind oft die gleichen und entwickeln sich nur langsam. Durch kontinuierliches Lernen und Experimentieren bleibe ich am Puls der Zeit. In meiner bisherigen Laufbahn habe ich produktive Systeme mit folgenden Technologien, Sprachen, Frameworks und Applikationsservern entwickelt:
+            %em Assembler, Basic, C, C++, Pascal, Lingo, TCL, Delphi, PHP, ASP, ColdFusion, Java, JEE, JSF, XML, XSLT, SOAP, RPC, Python, ContentServ, JBoss, Vignette, Wordpress, Radiant, Spring, Struts
+            und viele mehr die ich schon längst wieder vergessen habe...
 
       %section#references
         .container

@@ -1,5 +1,5 @@
 $('a.scrollTo').click (e) ->
     e.preventDefault()
-    href = $(this).attr('href')
+    href = $(@).attr('href')
     if href isnt '#'
-      $('html,body').animate({ scrollTop: $(href).offset().top - window.navHeight }, 400)
+      $('body').animate({ scrollTop: $(href).offset().top - 50 }, 400)

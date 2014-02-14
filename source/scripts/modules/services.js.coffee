@@ -84,15 +84,21 @@ $(->
   canvas.css '-webkit-transform', 'scale(0.8)'
 
   cloud.mousemove (e) ->
+    o = $(@).offset()
+
     w = cloud.width() / 2
     h = cloud.height() / 2
-    x = - (w - e.pageX) / w * 10
-    y = (h - e.pageY) / h * 10
 
-    canvas.css '-webkit-transform', "scale(0.8) translateZ(0) rotateX(#{ x }deg) rotateY(#{ y }deg)"
+    relX = e.pageX - o.left
+    relY = e.pageY - o.top
+
+    x = (w - relX) / w * 20
+    y = (h - relY) / h * 20
+
+    canvas.css '-webkit-transform', "scale(0.8) translateZ(0) rotateX(#{ y }deg) rotateY(#{ x }deg)"
 
   WordCloud(canvas[0],
-    fontFamily: 'Arial'
+    fontFamily: 'Droid Sans'
     color: 'rgba(0, 0, 0, 0.8)'
     rotateRatio: 0.5
     backgroundColor: 'transparent'

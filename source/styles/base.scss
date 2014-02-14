@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Bobcaygeon-Plain-BRK';
+  src: url('/fonts/Bobcaygeon-Plain-BRK.ttf.woff') format('woff'),
+       url('/fonts/Bobcaygeon-Plain-BRK.ttf.svg#Bobcaygeon-Plain-BRK') format('svg'),
+       url('/fonts/Bobcaygeon-Plain-BRK.ttf.eot'),
+       url('/fonts/Bobcaygeon-Plain-BRK.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,14 +20,8 @@ body {
   font-size: 16px;
 }
 
-@font-face {
-  font-family: 'Bobcaygeon-Plain-BRK';
-  src: url('/fonts/Bobcaygeon-Plain-BRK.ttf.woff') format('woff'),
-       url('/fonts/Bobcaygeon-Plain-BRK.ttf.svg#Bobcaygeon-Plain-BRK') format('svg'),
-       url('/fonts/Bobcaygeon-Plain-BRK.ttf.eot'),
-       url('/fonts/Bobcaygeon-Plain-BRK.ttf.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+article {
+  overflow: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {

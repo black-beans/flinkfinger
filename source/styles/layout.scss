@@ -1,0 +1,56 @@
+.container {
+  position: relative;
+}
+
+#mobileMenu {
+  color: #fff;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header#header {
+    .navbar {
+      #mobileMenu {
+        display: block;
+        float: right;
+
+        width: 25px;
+        height: 25px;
+
+        margin: 15px 8px;
+        padding: 0;
+
+        font-size: 24px;
+        text-align: right;
+
+        color: #000;
+        background: transparent;
+        border: 0;
+        outline: none;
+      }
+
+      .container {
+        padding: 0;
+      }
+
+      .navbar-collapse {
+        width: 100%;
+        background: rgb(159, 41, 39);
+
+        margin: 0;
+        padding: 0 20px;
+
+        ul {
+          a {
+            color: #fff;
+
+            &:hover {
+              color: #fff;
+              background-color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
