@@ -1,4 +1,4 @@
-header {
+header#header {
   position: relative;
   z-index: 99;
 
@@ -14,10 +14,42 @@ header {
 
   color: #fff;
   background-color: #f1f1f1;
+
   border-top: 1px solid rgb(159, 41, 39);
   border-bottom: 1px solid rgb(159, 41, 39);
 
-  &.fixed {
+  .navbar {
+    margin: 0;
+    padding: 3px 0;
+    border: 0;
+
+    img {
+      margin-left: 20px;
+    }
+
+    ul {
+      a {
+        color: rgb(159, 41, 39);
+
+        font-family: 'Droid Sans';
+        font-size: 25px;
+        font-variant: small-caps;
+        font-weight: 700;
+
+        &:hover {
+          color: #000;
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  }
+
+}
+
+body.menu-fixed {
+  margin-top: 60px;
+
+  header#header  {
     position: fixed;
     margin-top: 0 !important;
 

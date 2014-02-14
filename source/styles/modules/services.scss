@@ -1,9 +1,25 @@
 section#services {
 }
 
-#wordcloud {
-  @include background-image(linear-gradient(#b4bcbf, #fdfdfd));
+.specialized {
+  margin-bottom: 40px;
 
+  .label {
+    background: rgb(159, 41, 39);
+    font-size: 1.1em;
+
+    a {
+      @include text-shadow(rgba(black, 0.8) 1px 1px 0);
+      color: #fff;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+#wordcloud {
   position: relative;
   overflow: hidden;
 

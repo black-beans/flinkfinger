@@ -1,6 +1,10 @@
 section#about {
   padding-top: 40px;
 
+  .about {
+    font-size: 18px;
+  }
+
   .me {
     position: relative;
     display: block;
@@ -12,24 +16,51 @@ section#about {
       overflow: hidden;
       z-index: 1;
 
-      width: 200px;
-      height: 200px;
       margin: auto;
 
       img {
-        border-radius: 50%;
-        border: #F6F6F6 10px solid;
+        @include transition-property(border);
+        @include transition-duration(1s);
+
         width: 240px;
         height: 240px;
-      }
+        margin-top: 30px;
 
-      hr {
-        margin: 0 !important;
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        z-index: 0;
+        border-radius: 50%;
+        border: #F1F1F1 10px solid;
+
+        &:hover {
+          @include transition-property(border);
+          @include transition-duration(1s);
+          border: rgb(159, 41, 39) 20px solid;
+        }
       }
+    }
+  }
+
+  p.name {
+    font-family: 'Bobcaygeon-Plain-BRK';
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+
+    span {
+      color: rgb(159, 41, 39);
+    }
+  }
+
+  hr {
+    margin: 0;
+  }
+
+  p.about-me {
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  p.socials {
+    a {
+      padding: 10px;
     }
   }
 }

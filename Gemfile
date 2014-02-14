@@ -6,5 +6,5 @@ gem 'middleman-s3_sync'
 gem 'middleman-sprockets'
 gem 'middleman-clementine'
 gem 'bootstrap-sass'
-
+gem 'font-awesome-middleman'
 gem 'builder'

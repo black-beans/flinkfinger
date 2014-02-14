@@ -93,7 +93,7 @@ $(->
 
   WordCloud(canvas[0],
     fontFamily: 'Arial'
-    color: 'rgba(255, 255, 255, 0.8)'
+    color: 'rgba(0, 0, 0, 0.8)'
     rotateRatio: 0.5
     backgroundColor: 'transparent'
     list: services

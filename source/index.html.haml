@@ -17,16 +17,13 @@
         = image_tag('flinkfinger.png', class: 'img-responsive', alt: 'FlinkFinger GmbH')
 
       %header#header
-        %nav.navbar
+        %nav.navbar{ role: 'navigation' }
           .container
             %button#mobileMenu.fa.fa-bars{ type: 'button', data: { toggle: 'collapse', target: '.navbar-collapse' }}
             .navbar-header
-              %a.navbar-brand.scrollTo{ href: '#home' }
-                = image_tag('flinkfinger-ls.png', alt: 'FlinkFinger GmbH')
+              = image_tag('flinkfinger-ls.png', alt: 'FlinkFinger GmbH')
             .navbar-collapse.collapse
               %ul.nav.navbar-nav.navbar-right
-                %li
-                  %a.scrollTo{ href: '#about' } FlinkFinger
                 %li
                   %a.scrollTo{ href: '#services' } Dienstleistungen
                 %li
@@ -36,40 +33,55 @@
 
       %section#about
         .container
-          %p.text-center Die flinken Finger gehören zu
+          %p.about Die flinken Finger arbeiten seit 2010 unabhängig an Webseiten, Online-Shops und komplexen Webapplikationen mit neusten Technologien. Mit mehr als 20 Jahren Erfahrung in der Entwicklung von Software verfüge ich über tiefgreifende Kenntnisse in verschiedenen Bereichen.
 
           .me.text-center
             .picture
               = image_tag 'michael-kessler.jpg', class: 'img-responsive', alt: 'Michael Kessler'
-            %hr
 
-          %p.text-center Ich bin ein leidenschaftlicher Softwareentwickler, Open-Source Enthusiast und Scrum-Master.
+          %p.text-center.name
+            Michael
+            %span Kessler
+          %hr
+          %p.text-center.about-me Ich bin ein leidenschaftlicher Softwareentwickler, Open-Source Enthusiast und zertifizierter Scrum-Master.
 
-          .profile.xing
-            = link_to 'https://www.xing.com/profile/Michael_Kessler20' do
-              Xing
-
-          .profile.linkedin
-            = link_to 'ch.linkedin.com/pub/michael-kessler/49/11/ab6' do
-              LinkedIn
+          %p.socials.text-center
+            = link_to '', 'https://www.xing.com/profile/Michael_Kessler20', class: 'fa fa-xing fa-2x', title: 'Xing'
+            = link_to '', 'https://ch.linkedin.com/pub/michael-kessler/49/11/ab6', class: 'fa fa-linkedin fa-2x', title: 'LinkedIn'
+            = link_to '', 'https://plus.google.com/+MichaelKesslerStarkermann/about', class: 'fa fa-google-plus fa-2x', title: 'Google+'
+            = link_to '', 'https://www.twitter.com/netzpirat', class: 'fa fa-twitter fa-2x', title: 'Twitter'
+            = link_to '', 'https://www.github.com/netzpirat', class: 'fa fa-github fa-2x', title: 'GitHub'
+            = link_to '', 'https://www.facebook.com/michael.kessler.netzpirat', class: 'fa fa-facebook fa-2x', title: 'Facebook'
+            = link_to '', 'skype:mkessler74', class: 'fa fa-skype fa-2x', title: 'Skype'
+            = link_to '', 'mailto:michi@flinkfinger.com', class: 'fa fa-envelope-o fa-2x', title: 'Email'
 
       %section#services
         .container
           %h2 Dienstleistungen
           %p Ich bitte folgende Dienstleistungen rund um die Softwareentwicklung an:
 
-          %dl
-            %dt Anforderungsanalyse
+          %dl.dl-horizontal
+            %hr
+
+            %dt Analyse
             %dd Aufnahme ihrer Anforderungen in Gespräche/Workshops, welche anschliessend analysiert und in eine strukturierte Form gebracht werden, welche als Grundlage zur Entwicklung des Systemes dienen. Je nach Projekt kommen unterschiedliche Prozesse zum Zug, welche ausserdem optimal an die Bedürfnisse angepasst werden.
 
-            %dt Projektleitung
-            %dd Zusammenstellung des Teams; Organisation, Zuweisung und Kontrolle von Anforderungen; Steuerung und Visualisierung von der Informationen; Dokumentation und Schulung - wichtig um nicht den Überblick und damit die Entscheidungsfähigkeit im Projekt zu verlieren. Einsatz von agilen Prozessen mit kurzen Entwicklungszyklen für schnelle Rückmeldungen und daher auch frühzeitige Fehlererkennung.
+            %hr
 
-            %dt Architektur
+            %dt Design
             %dd Zusammenstellung der Komponenten, welche durch ein optimales Zusammenspiel die Grundlage des Systemes bilden. Integration, Test und Dokumentation sind elementar, damit die Entwicklung reibungslos abläuft und die nichtfunktionalen Anforderungen erfüllt werden. Umsetzung von Prototypen zur Verifizierung neuer Ansätze.
 
-            %dt Softwareentwicklung
+            %hr
+
+            %dt Leitung
+            %dd Zusammenstellung des Teams; Organisation, Zuweisung und Kontrolle von Anforderungen; Steuerung und Visualisierung von der Informationen; Dokumentation und Schulung - wichtig um nicht den Überblick und damit die Entscheidungsfähigkeit im Projekt zu verlieren. Einsatz von agilen Prozessen mit kurzen Entwicklungszyklen für schnelle Rückmeldungen und daher auch frühzeitige Fehlererkennung.
+
+            %hr
+
+            %dt Entwicklung
             %dd Umsetzung der architekturkonformen, funktionalen Anforderungen. Dazu gehören auch das Schreiben von Testfällen um die Funktionalität automatisch zu verifizieren und damit den Betrieb und die Weiterentwicklung sicherzustellen.
+
+            %hr
 
           %h3 Technologien
           %p Als Full-Stack Software-Entwickler habe ich Kentnisse aller Technologien, welche nötig sind um erfolgreich Software Projekte umzusetzten.
@@ -78,12 +90,34 @@
         %canvas
 
       .container
+        %i.fa.fa-html5.fa-4x
+        %i.fa.fa-css3.fa-4x
+
         %h3 Spezialgebiete
 
-        %p Ich bin spezialisiert auf die Entwicklung von Webapplikationen mit HTML5, CSS3, JavaScript/CoffeeScript, am liebsten mit einem Framework wie Backone, Marionette, Ember und AngularJS. Als Backend verwende ich Ruby on Rails und Node. Alles selbstverstuandlich testgetrieben.
+        %p Ich bin spezialisiert auf die Entwicklung von Webapplikationen mit den folgenden Technologien:
 
-        %a{ href: 'http://www.w3.org/html/logo/' }
-          %img{ src: 'http://www.w3.org/html/logo/badge/html5-badge-h-connectivity-css3-device-graphics-multimedia-performance-semantics-storage.png', width: '357', height: '64' }
+        %ul.list-inline.specialized
+          %li.label= link_to 'HTML5', 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5'
+          %li.label= link_to 'CSS3', 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'
+          %li.label= link_to 'JavaScript', 'https://developer.mozilla.org/en/docs/Web/JavaScript'
+          %li.label= link_to 'CoffeeScript', 'http://coffeescript.org/'
+          %li.label= link_to 'Ruby', 'https://www.ruby-lang.org/en/'
+          %li.label= link_to 'Node', 'http://nodejs.org/'
+
+        %p
+          Um nicht das Rad ständig neu zu erfinden, setze ich moderne Frameworks wie z.B.
+          = succeed ',' do
+            %em= link_to 'Backbone', 'http://backbonejs.org/'
+          %em= link_to 'Marionette', 'http://marionettejs.com/'
+          und
+          %em= link_to 'Ruby on Rails', 'https://developer.mozilla.org/en/docs/Web/JavaScript'
+          ein.
+
+        %blockquote
+          Technologien ändern sich stetig, Programmiersprachen kommen und gehen; dir darunterliegenden Konzepte sind oft die gleichen und entwickeln sich langsamer. Durch kontinuierliches Lernen und Experimentieren bleibe ich am Puls der Zeit und entwickle mich immer weiter. In meiner bisherigen Laufbahn habe ich grosse, produktive Systeme in folgenden Technologien, Sprachen, Frameworks und Applikationsservern entwickelt:
+          %em Assembler, Basic, C, C++, Pascal, Lingo, TCL, Delphi, PHP, ASP, ColdFusion, Java, JEE, JSF, XML, XSLT, SOAP, RPC, Python, ContentServ, JBoss, Vignette, Wordpress, Radiant, Spring, Struts
+          und viele mehr die ich schon längst wieder vergessen habe...
 
       %section#references
         .container
@@ -94,14 +128,18 @@
           %p Open-Source ist ein wichtiger Teil meiner Arbeit, weil...
 
           %ul
+            %li Wissen allen zuguanglich sein sollte.
             %li Ich mein technisches Können demonstrieren kann.
             %li Ich mich trotz meiner 1-Mann-Firma mit Gleichgesinnten austauschen kann.
             %li Ich durch meine Kontakte auf ein hochkompetentes Netzwerk von Spezialisten zurückgreifen kann.
 
+          %a.fa.fa-github{ href: 'https://github.com/flinkfinger', class: 'fa-4x' }
+
       %section#contact
         .container
           %address
-            %h2 Kontakt
+            %h2
+              Kontakt
             %ul
               %li.space
                 FlinkFinger GmbH
@@ -117,9 +155,11 @@
               %li.space
                 %abbr{ title: 'Mobil' } M:
                 +41 79 244 55 61
-              %li
+              %li.space
                 %a{ href: "mailto:hello@flinkfinger.com" } hello@flinkfinger.com
-
+              %li
+                = link_to '', 'https://plus.google.com/+FlinkFingerGmbHBremgarten/posts', class: 'fa fa-google-plus fa-lg', title: 'Google+'
+                = link_to '', 'https://www.xing.com/companies/flinkfingergmbh', class: 'fa fa-xing fa-lg', stitle: 'Xing'
         #gmap
 
     = javascript_include_tag 'application'
