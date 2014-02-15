@@ -127,12 +127,94 @@
           %p Open-Source ist ein wichtiger Teil meiner Arbeit, weil...
 
           %ul
-            %li Wissen allen zuguanglich sein sollte.
+            %li Wissen allen zugänglich sein sollte.
             %li Ich mein technisches Können demonstrieren kann.
             %li Ich mich trotz meiner 1-Mann-Firma mit Gleichgesinnten austauschen kann.
             %li Ich durch meine Kontakte auf ein hochkompetentes Netzwerk von Spezialisten zurückgreifen kann.
 
-          %a.fa.fa-github{ href: 'https://github.com/flinkfinger', class: 'fa-4x' }
+          %br
+          %br
+
+          .table-responsive
+            %table.table.table-hover.table-condensed
+              %thead
+                %tr
+                  %th Projekt
+                  %th Technologien
+                  %th Beschreibung
+              %tbody
+                %tr
+                  %td.text-center
+                    = link_to 'https://github.com/guard' do
+                      = image_tag 'guard.png'
+                  %td Ruby, CoffeeScript
+                  %td
+                    %p
+                      = link_to 'https://github.com/guard/guard' do
+                        Guard
+                      ist ein Tool welches Aufgaben im Entwicklungsprozess automatisiert, indem es auf Änderungen im Dateisystem reagiert.
+                    %p
+                      Durch ein grosses Ökosystem von Plugins stehen unzählige spezialisierte Helfer
+                      zur Verfügung. Als Mitglied des Core-Teams helfe ich bei der Entwicklung von Guard mit und stelle mit
+                      = succeed ',' do
+                        = link_to 'Guard::Jasmine', 'https://github.com/netzpirat/guard-jasmine'
+                      = link_to 'Guard::CoffeeScript', 'https://github.com/netzpirat/guard-coffeescript'
+                      und
+                      = link_to 'Guard::Cucumber', 'https://github.com/netzpirat/guard-cucumber'
+                      auch einige wichtige Plugins zur Verfügung.
+                    %p
+                      Guard und meine Plugins sind zusammen mehr mit
+                      %strong 5 Millionen
+                      mal heruntergeladen worden.
+
+                %tr
+                  %td.text-center
+                    %h2 Haml-Coffee
+                  %td CoffeeScript, Ruby
+                  %td
+                    %p
+                      = link_to 'https://github.com/netzpirat/haml-coffee' do
+                        Haml-Coffee
+                      ist ein JavaScript-Template-Engine, welche
+                      = link_to 'HAML', 'http://haml.info/'
+                      und
+                      = link_to 'CoffeeScript', 'http://coffeescript.org/'
+                      miteinander verheiratet. So können dynamisch HTML Fragmente anhand
+                      von JavaScript Objekten generiert werden.
+                    %p
+                      Haml-Coffee funktioniert auf Node.JS, im Browser und mit
+                      = link_to 'Haml Coffee Assets', 'https://github.com/netzpirat/haml_coffee_assets'
+                      stelle ich auch eine Integration in die Ruby on Rails Asset Pipeline bereit.
+                    %p
+                      Haml Coffee steht auch in einer
+                      = link_to 'Online Version', 'http://haml-coffee-online.herokuapp.com/'
+                      zum Testen bereit.
+                %tr
+                  %td.text-center
+                    = link_to 'https://github.com/coffeedoc' do
+                      = image_tag 'codo.png'
+                  %td CoffeeScript, Node
+                  %td
+                    %p
+                      = link_to 'https://github.com/coffeedoc/codo' do
+                        Codo
+                      ist ein API Dokumentationsgenerator für CoffeeScript, welcher komplexe Objekthierarchien
+                      analysiert, aufbereitet und daraus eine Dokumentation erstellt.
+                    %p
+                      Mit
+                      = link_to 'http://www.coffeedoc.info' do
+                        Coffeedoc.info
+                      steht der Generator auch mit einer GitHub-Integration Online zur Verfügung und wird unter
+                      anderem von Dropbox verwendet.
+
+          %p
+            %i.fa.fa-github.fa-4x
+            Alle meine Open-Source Projekte sind auf GitHub zu finden, entweder unter
+            = link_to 'FlinkFinger', 'https://github.com/flinkfinger'
+            oder meinem
+            = link_to 'Netzpirat', 'https://github.com/netzpirat'
+            Pseudonym.
+
 
       %section#contact
         .container
