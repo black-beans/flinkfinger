@@ -2,6 +2,94 @@ section#references {
   padding-top: 40px;
   padding-bottom: 80px;
 
+  .thumbnails {
+    margin-top: 25px;
+
+    .thumbnail {
+      @include perspective(600px);
+
+      position: relative;
+      width: 260px;
+      height: 286px;
+
+      .front {
+        @include transition(all 0.4s linear);
+        @include backface-visibility(hidden);
+        @include transform-style(preserve-3d);
+
+        position: absolute;
+        top: 5px;
+        left: 5px;
+
+        width: 250px;
+        height: 276px;
+
+        z-index: 900;
+
+        img {
+          width: 250px;
+          height: 276px;
+        }
+      }
+
+      .back {
+        @include transition(all 0.4s linear);
+        @include backface-visibility(hidden);
+        @include transform-style(preserve-3d);
+        @include transform(rotateY(-180deg));
+        @include text-shadow(rgba(0, 0, 0, 0.8) 0 0 3px);
+
+        border-radius: 3px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+
+        width: 250px;
+        height: 276px;
+
+        padding: 20px;
+        z-index: 800;
+
+        background: rgb(159, 41, 39);
+        color: #fff;
+
+        h2 {
+          @include text-shadow(rgba(0, 0, 0, 0.8) 0 0 5px);
+          margin-top: 0;
+          color: #fff;
+          letter-spacing: 1px;
+        }
+
+        .reference {
+          position: absolute;
+          bottom: 0;
+          text-align: center;
+          padding-bottom: 20px;
+
+          a {
+            color: #fff;
+
+            &:hover {
+              color: #fff;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        .front {
+          @include transform(rotateY(180deg));
+        }
+
+        .back {
+          @include transform(rotateX(0deg) rotateY(0deg));
+        }
+
+      }
+    }
+  }
+
   .oss {
     margin-bottom: 25px;
   }
