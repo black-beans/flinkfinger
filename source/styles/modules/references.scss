@@ -1,4 +1,40 @@
 section#references {
   padding-top: 40px;
   padding-bottom: 80px;
+
+  .thumbnails {
+    @include perspective(1000px);
+
+    position: relative;
+    overflow: auto;
+
+    .col-xs-6 {
+      @include transform-style(preserve-3d);
+      @include transition(all 1.0s linear);
+
+      .thumbnail {
+        position: absolute;
+        backface-visibility: hidden;
+      }
+
+      .front {
+      }
+
+      .back {
+        transform: rotateY(180deg);
+      }
+
+      &:hover {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  .oss {
+    margin-bottom: 25px;
+  }
+
+  .github {
+    margin-top: 80px;
+  }
 }

@@ -123,17 +123,54 @@
           %h2 Referenzen
           %p In den letzten Jahrzehnten durfte ich an unzähligen Projekten mitarbeiten.
 
+          .row
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/mobilezone.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/recomy.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/easysmokers.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/vdr.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/turquoise-istanbul.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/mps.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/einfachming.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/thewayofthestone.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/weixelbaumer-partner.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/sagenweg.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/baumnatur.jpg'
+            .col-xs-6.col-md-3
+              .thumbnail
+                = image_tag 'references/backnische.jpg'
+
+          %hr
+
           %h2 Open Source
           %p Open-Source ist ein wichtiger Teil meiner Arbeit, weil...
 
-          %ul
+          %ul.oss
             %li Wissen allen zugänglich sein sollte.
             %li Ich mein technisches Können demonstrieren kann.
             %li Ich mich trotz meiner 1-Mann-Firma mit Gleichgesinnten austauschen kann.
             %li Ich durch meine Kontakte auf ein hochkompetentes Netzwerk von Spezialisten zurückgreifen kann.
-
-          %br
-          %br
 
           .table-responsive
             %table.table.table-hover.table-condensed
@@ -207,14 +244,13 @@
                       steht der Generator auch mit einer GitHub-Integration Online zur Verfügung und wird unter
                       anderem von Dropbox verwendet.
 
-          %p
-            %i.fa.fa-github.fa-4x
+          %p.github
+            %i.fa.fa-github.fa-10x.pull-right
             Alle meine Open-Source Projekte sind auf GitHub zu finden, entweder unter
             = link_to 'FlinkFinger', 'https://github.com/flinkfinger'
             oder meinem
             = link_to 'Netzpirat', 'https://github.com/netzpirat'
             Pseudonym.
-
 
       %section#contact
         .container
