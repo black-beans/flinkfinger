@@ -9,8 +9,8 @@ section#references {
       @include perspective(600px);
 
       position: relative;
-      width: 260px;
-      height: 286px;
+      width: 240px;
+      height: 265px;
 
       .front {
         @include transition(all 0.4s linear);
@@ -21,14 +21,14 @@ section#references {
         top: 5px;
         left: 5px;
 
-        width: 250px;
-        height: 276px;
+        width: 230px;
+        height: 255px;
 
         z-index: 900;
 
         img {
-          width: 250px;
-          height: 276px;
+          width: 230px;
+          height: 255px;
         }
       }
 
@@ -44,8 +44,8 @@ section#references {
         top: 5px;
         left: 5px;
 
-        width: 250px;
-        height: 276px;
+        width: 230px;
+        height: 255px;
 
         padding: 20px;
         z-index: 800;
