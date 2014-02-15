@@ -80,8 +80,6 @@ set :images_dir, 'images'
 #
 configure :build do
 
-  activate :clementine
-
   # Enable live reload while working locally
   activate :livereload
 
