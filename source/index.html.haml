@@ -126,7 +126,7 @@
       %section#references
         .container
           %h2 Referenzen
-          %p In den letzten Jahrzehnten durfte ich an unzähligen Projekten mitarbeiten.
+          %p In den letzten Jahrzehnten durfte ich an unzähligen Projekten mitarbeiten:
 
           .row.thumbnails
             .col-xs-6.col-md-3
@@ -337,22 +337,22 @@
               %tbody
                 %tr
                   %td.text-center
-                    = link_to 'https://github.com/guard' do
+                    = link_to 'https://github.com/guard', target: '_blank' do
                       = image_tag 'guard.png'
                   %td Ruby, CoffeeScript
                   %td
                     %p
-                      = link_to 'https://github.com/guard/guard' do
+                      = link_to 'https://github.com/guard/guard', target: '_blank' do
                         Guard
                       ist ein Tool welches Aufgaben im Entwicklungsprozess automatisiert, indem es auf Änderungen im Dateisystem reagiert.
                     %p
                       Durch ein grosses Ökosystem von Plugins stehen unzählige spezialisierte Helfer
                       zur Verfügung. Als Mitglied des Core-Teams helfe ich bei der Entwicklung von Guard mit und stelle mit
                       = succeed ',' do
-                        = link_to 'Guard::Jasmine', 'https://github.com/netzpirat/guard-jasmine'
-                      = link_to 'Guard::CoffeeScript', 'https://github.com/netzpirat/guard-coffeescript'
+                        = link_to 'Guard::Jasmine', 'https://github.com/netzpirat/guard-jasmine', target: '_blank'
+                      = link_to 'Guard::CoffeeScript', 'https://github.com/netzpirat/guard-coffeescript', target: '_blank'
                       und
-                      = link_to 'Guard::Cucumber', 'https://github.com/netzpirat/guard-cucumber'
+                      = link_to 'Guard::Cucumber', 'https://github.com/netzpirat/guard-cucumber', target: '_blank'
                       auch einige wichtige Plugins zur Verfügung.
                     %p
                       Guard und meine Plugins sind zusammen mehr mit
@@ -365,36 +365,36 @@
                   %td CoffeeScript, Ruby
                   %td
                     %p
-                      = link_to 'https://github.com/netzpirat/haml-coffee' do
+                      = link_to 'https://github.com/netzpirat/haml-coffee', target: '_blank' do
                         Haml-Coffee
                       ist ein JavaScript-Template-Engine, welche
-                      = link_to 'HAML', 'http://haml.info/'
+                      = link_to 'HAML', 'http://haml.info/', target: '_blank'
                       und
-                      = link_to 'CoffeeScript', 'http://coffeescript.org/'
+                      = link_to 'CoffeeScript', 'http://coffeescript.org/', target: '_blank'
                       miteinander verheiratet. So können dynamisch HTML Fragmente anhand
                       von JavaScript Objekten generiert werden.
                     %p
                       Haml-Coffee funktioniert auf Node.JS, im Browser und mit
-                      = link_to 'Haml Coffee Assets', 'https://github.com/netzpirat/haml_coffee_assets'
+                      = link_to 'Haml Coffee Assets', 'https://github.com/netzpirat/haml_coffee_assets', target: '_blank'
                       stelle ich auch eine Integration in die Ruby on Rails Asset Pipeline bereit.
                     %p
                       Haml Coffee steht auch in einer
-                      = link_to 'Online Version', 'http://haml-coffee-online.herokuapp.com/'
+                      = link_to 'Online Version', 'http://haml-coffee-online.herokuapp.com/', target: '_blank'
                       zum Testen bereit.
                 %tr
                   %td.text-center
-                    = link_to 'https://github.com/coffeedoc' do
+                    = link_to 'https://github.com/coffeedoc', target: '_blank' do
                       = image_tag 'codo.png'
                   %td CoffeeScript, Node
                   %td
                     %p
-                      = link_to 'https://github.com/coffeedoc/codo' do
+                      = link_to 'https://github.com/coffeedoc/codo', target: '_blank' do
                         Codo
                       ist ein API Dokumentationsgenerator für CoffeeScript, welcher komplexe Objekthierarchien
                       analysiert, aufbereitet und daraus eine Dokumentation erstellt.
                     %p
                       Mit
-                      = link_to 'http://www.coffeedoc.info' do
+                      = link_to 'http://www.coffeedoc.info', target: '_blank' do
                         Coffeedoc.info
                       steht der Generator auch mit einer GitHub-Integration Online zur Verfügung und wird unter
                       anderem von Dropbox verwendet.
@@ -402,9 +402,9 @@
           %p.github
             %i.fa.fa-github.fa-10x.pull-right
             Alle meine Open-Source Projekte sind auf GitHub zu finden, entweder unter
-            = link_to 'FlinkFinger', 'https://github.com/flinkfinger'
+            = link_to 'FlinkFinger', 'https://github.com/flinkfinger', target: '_blank'
             oder meinem
-            = link_to 'Netzpirat', 'https://github.com/netzpirat'
+            = link_to 'Netzpirat', 'https://github.com/netzpirat', target: '_blank'
             Pseudonym.
 
       %section#contact
@@ -430,8 +430,8 @@
               %li.space
                 %a{ href: "mailto:hello@flinkfinger.com" } hello@flinkfinger.com
               %li
-                = link_to '', 'https://plus.google.com/+FlinkFingerGmbHBremgarten/posts', class: 'fa fa-google-plus fa-lg', title: 'Google+'
-                = link_to '', 'https://www.xing.com/companies/flinkfingergmbh', class: 'fa fa-xing fa-lg', stitle: 'Xing'
+                = link_to '', 'https://plus.google.com/+FlinkFingerGmbHBremgarten/posts', class: 'fa fa-google-plus fa-lg', title: 'Google+', target: '_blank'
+                = link_to '', 'https://www.xing.com/companies/flinkfingergmbh', class: 'fa fa-xing fa-lg', stitle: 'Xing', target: '_blank'
         #gmap
 
     = javascript_include_tag 'application'
