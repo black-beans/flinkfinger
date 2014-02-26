@@ -1,6 +1,6 @@
-# Weixelbaumer & Partner
+# FlinkFinger
 
-This project contains the static site for [http://www.weixelbaumer-partner.ch](http://www.weixelbaumer-partner.ch/) and
+This project contains the static site for [http://www.flinkfinger.com](http://www.flinkfinger.com) and
 makes use of the following tools:
 
 * [Middleman](http://middlemanapp.com/) to generate the static web page.
