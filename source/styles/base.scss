@@ -16,8 +16,13 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Droid Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'feight-text-pro', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: .01rem;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   text-shadow: rgba(0, 0, 0, 0.4) 0 0 0;
 }
 
@@ -31,27 +36,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 55px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 h4 {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 h5, h6 {
-  font-size: 20px;
+  font-size: 25px;
+}
+
+em {
+  font-weight: 400;
 }
 
 a {
   color: rgb(159, 41, 39);
+  font-weight: 300;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 
   &:hover {
     color: #000;

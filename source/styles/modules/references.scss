@@ -6,6 +6,8 @@ section#references {
 
   .thumbnails {
     margin-top: 25px;
+    font-size: 16px;
+    font-weight: 600;
 
     .thumbnail {
       @include perspective(600px);
@@ -60,7 +62,8 @@ section#references {
           @include text-shadow(rgba(0, 0, 0, 0.8) 0 0 5px);
           margin-top: 0;
           color: #fff;
-          letter-spacing: 1px;
+          letter-spacing: .1rem;
+          line-height: 0.9;
         }
 
         .reference {
@@ -71,6 +74,7 @@ section#references {
 
           a {
             color: #fff;
+            font-size: 14px;
 
             &:hover {
               color: #fff;

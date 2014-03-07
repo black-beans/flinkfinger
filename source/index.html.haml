@@ -13,7 +13,8 @@
     %meta{ content: 'FlinkFinger', name: 'copyright' }
 
     %link{ href: 'https://plus.google.com/+FlinkFingerGmbHBremgarten', rel: 'publisher' }
-    %link{ href: 'http://fonts.googleapis.com/css?family=Droid+Sans', rel: 'stylesheet', type: 'text/css' }
+    %script{ src: '//use.typekit.net/vkq2rvq.js' }
+    %script try { Typekit.load(); } catch(e) {}
 
     = stylesheet_link_tag 'application'
   %body
@@ -39,7 +40,7 @@
 
       %section#about
         .container
-          %p.about
+          %p.about.text-center
             Die flinken Finger arbeiten seit 2010 unabhängig an massgescheiderten
             = succeed ',' do
               %em Webseiten
@@ -64,7 +65,7 @@
             %span Kessler
           %hr
           %p.text-center.about-me
-            Ich bin ein leidenschaftlicher
+            Ich bin leidenschaftlicher
             = succeed ',' do
               %em Softwareentwickler
             %em Open-Source Enthusiast
@@ -87,7 +88,7 @@
           %h2 Dienstleistungen
           %p
             Ich bitte folgende Dienstleistungen rund um die
-            %strong Softwareentwicklung
+            %em Softwareentwicklung
             an:
 
           %dl.dl-horizontal
@@ -162,8 +163,7 @@
             mit
             = succeed '.' do
               = link_to 'Shopify', 'http://www.shopify.com/?ref=mkse'
-            Ich fertige aber auch massgeschneiderte Internet-Shops für ihren
-            %em Ecommerce Shop.
+            Ich fertige aber auch massgeschneiderte Internet-Shops für ihre ganz besonderen Anforderungen.
 
           %blockquote
             Technologien ändern sich stetig, Programmiersprachen kommen und gehen; die darunterliegenden Konzepte sind oft die gleichen und entwickeln sich nur langsam. Durch kontinuierliches Lernen und Experimentieren bleibe ich am Puls der Zeit. In meiner bisherigen Laufbahn habe ich produktive Systeme mit folgenden Technologien, Sprachen, Frameworks und Applikationsservern entwickelt:
@@ -176,7 +176,7 @@
       %section#references
         .container
           %h2 Referenzen
-          %p In den letzten Jahrzehnten durfte ich an unzähligen Projekten mitarbeiten. Hier eine Auswahl an Projekte:
+          %p In den letzten Jahrzehnten durfte ich an unzähligen Projekten mitarbeiten. Hier eine Auswahl an Projekten:
 
           .row.thumbnails
             .col-xs-6.col-md-3.animate.animate-bottom
