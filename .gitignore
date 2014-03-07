@@ -5,3 +5,4 @@ Thumbs.db
 .bundle
 deploy
 .s3_sync
+.cache

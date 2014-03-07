@@ -14,7 +14,7 @@
   %body
     %article
       %section#home
-        = image_tag('flinkfinger.png', class: 'img-responsive', alt: 'FlinkFinger GmbH')
+        = image_tag('flinkfinger.png', class: 'img-responsive animate animate-bottom', alt: 'FlinkFinger GmbH')
 
       %header#header
         %nav.navbar{ role: 'navigation' }
@@ -34,10 +34,19 @@
 
       %section#about
         .container
-          %p.about Die flinken Finger arbeiten seit 2010 unabhängig an Webseiten, Online-Shops und komplexen Webapplikationen mit neusten Technologien. Mit mehr als 20 Jahren Erfahrung in der Entwicklung von Software verfüge ich über tiefgreifende Kenntnisse in verschiedenen Bereichen.
+          %p.about
+            Die flinken Finger arbeiten seit 2010 unabhängig an
+            = succeed ',' do
+              %i Webseiten
+            %i Online-Shops
+            und komplexen
+            %i Webapplikationen
+            mit aktuellen Technologien. Mit mehr als 20 Jahren Erfahrung in der
+            %i Softwareentwicklung
+            verfüge ich über tiefgreifende Kenntnisse in verschiedenen Bereichen.
 
           .me.text-center
-            .picture
+            .picture.animate.animate-fade
               = image_tag 'michael-kessler.jpg', class: 'img-responsive', alt: 'Michael Kessler'
 
           %p.text-center.name
@@ -49,7 +58,7 @@
           %p.socials.text-center
             = link_to '', 'https://www.xing.com/profile/Michael_Kessler20', class: 'fa fa-xing fa-2x', title: 'Xing', target: '_blank'
             = link_to '', 'https://ch.linkedin.com/pub/michael-kessler/49/11/ab6', class: 'fa fa-linkedin fa-2x', title: 'LinkedIn', target: 'blank'
-            = link_to '', 'https://plus.google.com/+MichaelKesslerStarkermann/about?rel=author', class: 'fa fa-google-plus fa-2x', title: 'Google+', target: '_blank'
+            = link_to '', 'https://plus.google.com/+MichaelKesslerStarkermann/about?rel=author', rel: 'author', class: 'fa fa-google-plus fa-2x', title: 'Google+', target: '_blank'
             = link_to '', 'https://www.twitter.com/netzpirat', class: 'fa fa-twitter fa-2x', title: 'Twitter', target: '_blank'
             = link_to '', 'https://www.github.com/netzpirat', class: 'fa fa-github fa-2x', title: 'GitHub', tarket: '_blank'
             = link_to '', 'https://www.facebook.com/michael.kessler.netzpirat', class: 'fa fa-facebook fa-2x', title: 'Facebook', target: '_blank'
@@ -87,11 +96,16 @@
           %h3 Technologien
           %p Als Full-Stack Software-Entwickler habe ich Kentnisse aller Technologien, welche nötig sind um erfolgreich Software Projekte umzusetzten.
 
-          = image_tag 'wordcloud.jpg', class: 'img-responsive', alt: 'Service Tag Cloud'
+          = image_tag 'wordcloud.jpg', class: 'img-responsive animate animate-fade', alt: 'Server, Linux, OS X, Netzwerk, TCP, IP, DNS, HTTP, Hosting, Redundanz, Verfügbarkeit, Cloud, Amazon, Google Apps, Datenmodelierung, E/R, UML, ORM, Geschäftslogik, OOA/OOD, State Machine, Payment, SQL, PostgreSQL, MySQL, NoSQL, MongoDB, Redis, Memcached, MVC, Rails, Marionette, AngularJS, REST API, JSON, XML, Maturity Level, Testing, Unit Tests, Integration Tests, RSpec, Jasmine, Cucumber, Automatisierung, Tests, Qualitätssicherung, Webapplikationen, JavaScript, CoffeeScript, Backbone, HTML5, Semantik, Markup, HAML, API, CSS3, Browser, SASS, Compass, Usability, Analyse'
 
           %h3 Spezialgebiete
 
-          %p Ich bin spezialisiert auf die Entwicklung von Webapplikationen mit den folgenden Technologien:
+          %p
+            Ich bin spezialisiert auf die Entwicklung von
+            %i Webapplikationen
+            und
+            %i responsive Webdesign
+            mit den folgenden Technologien:
 
           %ul.list-inline.specialized
             %li.label= link_to 'HTML5', 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5', target: '_blank'
@@ -111,7 +125,9 @@
             ein.
 
           %p
-            Für kostengünstige Online-Shops setze ich bevorzugt
+            Für kostengünstige
+            %i Online-Shops
+            setze ich bevorzugt
             = link_to 'Shopify', 'http://www.shopify.com/?ref=mkse'
             ein, ich fertige aber auch Online-Shops auf Basis anderer Produkte.
 
@@ -129,7 +145,7 @@
           %p In den letzten Jahrzehnten durfte ich an unzähligen Projekten mitarbeiten. Hier eine kleine Auswahl der aktuelleren Projekte:
 
           .row.thumbnails
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/mobilezone.jpg'
@@ -147,7 +163,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.mobilezone.ch', 'http://www.mobilezone.ch', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/recomy.jpg'
@@ -166,7 +182,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.recomy.com', 'https://www.recomy.com', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/easysmokers.jpg'
@@ -181,7 +197,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.easysmokers.ch', 'http://www.easysmokers.ch', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/vdr.jpg'
@@ -196,7 +212,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.valse-des-roses.ch', 'http://www.valse-des-roses.ch', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/turquoise-istanbul.jpg'
@@ -211,7 +227,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'shop.turquoise-istanbul.com', 'http://shop.turquoise-istanbul.com', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/mps.jpg'
@@ -226,7 +242,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.muellerps.ch', 'http://www.muellerps.ch', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/einfachming.jpg'
@@ -240,7 +256,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.einfachming.ch', 'http://www.einfachming.ch', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/thewayofthestone.jpg'
@@ -255,7 +271,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.thewayofthestone.ch', 'http://www.thewayofthestone.ch', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/weixelbaumer-partner.jpg'
@@ -269,7 +285,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.weixelbaumer-partner.ch', 'http://www.weixelbaumer-partner.ch', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/sagenweg.jpg'
@@ -285,7 +301,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.freiaemtersagenweg.ch', 'http://www.freiaemtersagenweg.ch', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/baumnatur.jpg'
@@ -299,7 +315,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.baumnatur.ch', 'http://www.baumnatur.ch', target: '_blank'
 
-            .col-xs-6.col-md-3
+            .col-xs-6.col-md-3.animate.animate-left
               .thumbnail
                 .front
                   = image_tag 'references/backnische.jpg'
@@ -334,7 +350,7 @@
               %tbody
                 %tr
                   %td.text-center
-                    = link_to 'https://github.com/guard', target: '_blank' do
+                    = link_to 'https://github.com/guard', class: 'animate animate-right', target: '_blank' do
                       = image_tag 'guard.png'
                   %td Ruby, CoffeeScript
                   %td
@@ -358,7 +374,7 @@
 
                 %tr
                   %td.text-center
-                    %h2 Haml-Coffee
+                    %h2.animate.animate-right Haml-Coffee
                   %td CoffeeScript, Ruby
                   %td
                     %p
@@ -380,7 +396,7 @@
                       zum Testen bereit.
                 %tr
                   %td.text-center
-                    = link_to 'https://github.com/coffeedoc', target: '_blank' do
+                    = link_to 'https://github.com/coffeedoc', class: 'animate animate-right', target: '_blank' do
                       = image_tag 'codo.png'
                   %td CoffeeScript, Node
                   %td
@@ -397,7 +413,7 @@
                       anderem von Dropbox verwendet.
 
           %p.github
-            %i.fa.fa-github.fa-10x.pull-right
+            %i.fa.fa-github.fa-10x.pull-right.animate.animate-left
             Alle meine Open-Source Projekte sind auf GitHub zu finden, entweder unter
             = link_to 'FlinkFinger', 'https://github.com/flinkfinger', target: '_blank'
             oder meinem
@@ -430,6 +446,12 @@
                 = link_to '', 'https://plus.google.com/+FlinkFingerGmbHBremgarten/posts', class: 'fa fa-google-plus fa-lg', title: 'Google+', target: '_blank'
                 = link_to '', 'https://www.xing.com/companies/flinkfingergmbh', class: 'fa fa-xing fa-lg', stitle: 'Xing', target: '_blank'
         #gmap
+
+      %footer#footer
+        %p.text-center
+          &copy; 2014 by Michael Kessler, FlinkFinger GmbH. Diese Webseite ist
+          = succeed '.' do
+            = link_to 'Open Source', 'https://github.com/flinkfinger/flinkfinger'
 
     = javascript_include_tag 'application'
 

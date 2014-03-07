@@ -11,9 +11,12 @@
 @import 'base';
 @import 'layout';
 
+@import 'base/animate';
+
 @import 'modules/home';
 @import 'modules/header';
 @import 'modules/about';
 @import 'modules/services';
 @import 'modules/references';
 @import 'modules/contact';
+@import 'modules/footer';

@@ -1,0 +1,38 @@
+.animate-bottom {
+	opacity: 0;
+	bottom: -50px;
+	padding-left: 0px;
+	position: relative;
+}
+
+.animate-left {
+	opacity: 0;
+	left: -80px;
+	padding-right: 0px;
+	position: relative;
+}
+
+.animate-right {
+	opacity: 0;
+	right: -80px;
+	padding-left: 0px;
+	position: relative;
+}
+
+.animate-fade {
+	opacity: 0;
+	right: 0px;
+	position: relative;
+	padding-left: 0px;
+}
+
+.animate {
+	-webkit-animation-duration: 1200ms;
+	-moz-animation-duration: 1200ms;
+	-o-animation-duration: 1200ms;
+	animation-duration: 1200ms;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+		 -o-animation-fill-mode: both;
+			animation-fill-mode: both;
+}
