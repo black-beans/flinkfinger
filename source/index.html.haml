@@ -3,9 +3,9 @@
   %head
     %meta{ charset: 'utf-8'}
     %meta{ content: 'IE=edge', 'http-equiv' => 'X-UA-Compatible' }
-    %title FlinkFinger - Softwareentwicklung aus Leidenschaft
+    %title FlinkFinger - Softwareentwicklung aus Leidenschaft. Ruby on Rails - JavaScript - CoffeeScript.
     %meta{ content: 'FlinkFinger - Softwareentwicklung aus Leidenschaft', name: 'description' }
-    %meta{ content: 'Anforderungsanalyse', name: 'Keywords' }
+    %meta{ content: 'Server, Linux, OS X, Netzwerk, TCP, IP, DNS, HTTP, Hosting, Redundanz, Verfügbarkeit, Cloud, Amazon, Google Apps, Datenmodelierung, E/R, UML, ORM, Geschäftslogik, OOA/OOD, State Machine, Payment, SQL, PostgreSQL, MySQL, NoSQL, MongoDB, Redis, Memcached, MVC, Rails, Marionette, AngularJS, REST API, JSON, XML, Maturity Level, Testing, Unit Tests, Integration Tests, RSpec, Jasmine, Cucumber, Automatisierung, Tests, Qualitätssicherung, Webapplikationen, JavaScript, CoffeeScript, Backbone, HTML5, Semantik, Markup, HAML, API, CSS3, Browser, SASS, Compass, Usability, Analyse', name: 'Keywords' }
     %meta{ content: 'width=device-width, initial-scale=1', name: 'viewport' }
 
     %link{ href: 'http://fonts.googleapis.com/css?family=Droid+Sans', rel: 'stylesheet', type: 'text/css' }
@@ -35,15 +35,20 @@
       %section#about
         .container
           %p.about
-            Die flinken Finger arbeiten seit 2010 unabhängig an
+            Die flinken Finger arbeiten seit 2010 unabhängig an massgescheiderten
             = succeed ',' do
-              %i Webseiten
-            %i Online-Shops
+              %em Webseiten
+            %em Webshops
             und komplexen
-            %i Webapplikationen
+            %em Webapplikationen
             mit aktuellen Technologien. Mit mehr als 20 Jahren Erfahrung in der
-            %i Softwareentwicklung
-            verfüge ich über tiefgreifende Kenntnisse in verschiedenen Bereichen.
+            %em Softwareentwicklung
+            , im Frontend sowohl als auch im Backend,
+            verfüge ich über tiefgreifende Kenntnisse in allen Bereichen der
+            %em Webentwicklung
+            um ihren
+            %em Webauftritt
+            erfolgreich umzusetzten.
 
           .me.text-center
             .picture.animate.animate-fade
@@ -53,7 +58,14 @@
             Michael
             %span Kessler
           %hr
-          %p.text-center.about-me Ich bin ein leidenschaftlicher Softwareentwickler, Open-Source Enthusiast und zertifizierter Scrum-Master.
+          %p.text-center.about-me
+            Ich bin ein leidenschaftlicher
+            = succeed ',' do
+              %em Softwareentwickler
+            %em Open-Source Enthusiast
+            und zertifizierter
+            = succeed '.' do
+              %em Scrum-Master
 
           %p.socials.text-center
             = link_to '', 'https://www.xing.com/profile/Michael_Kessler20', class: 'fa fa-xing fa-2x', title: 'Xing', target: '_blank'
@@ -68,27 +80,34 @@
       %section#services
         .container
           %h2 Dienstleistungen
-          %p Ich bitte folgende Dienstleistungen rund um die Softwareentwicklung an:
+          %p
+            Ich bitte folgende Dienstleistungen rund um die
+            %strong Softwareentwicklung
+            an:
 
           %dl.dl-horizontal
             %hr
 
-            %dt Analyse
+            %dt
+              %strong Analyse
             %dd Aufnahme ihrer Anforderungen in Gespräche/Workshops, welche anschliessend analysiert und in eine strukturierte Form gebracht werden, welche als Grundlage zur Entwicklung des Systemes dienen. Je nach Projekt kommen unterschiedliche Prozesse zum Zug, welche ausserdem optimal an die Bedürfnisse angepasst werden.
 
             %hr
 
-            %dt Design
+            %dt
+              %strong Design
             %dd Zusammenstellung der Komponenten, welche durch ein optimales Zusammenspiel die Grundlage des Systemes bilden. Integration, Test und Dokumentation sind elementar, damit die Entwicklung reibungslos abläuft und die nichtfunktionalen Anforderungen erfüllt werden. Umsetzung von Prototypen zur Verifizierung neuer Ansätze.
 
             %hr
 
-            %dt Leitung
+            %dt
+              %strong Leitung
             %dd Zusammenstellung des Teams; Organisation, Zuweisung und Kontrolle von Anforderungen; Steuerung und Visualisierung von der Informationen; Dokumentation und Schulung - wichtig um nicht den Überblick und damit die Entscheidungsfähigkeit im Projekt zu verlieren. Einsatz von agilen Prozessen mit kurzen Entwicklungszyklen für schnelle Rückmeldungen und daher auch frühzeitige Fehlererkennung.
 
             %hr
 
-            %dt Entwicklung
+            %dt
+              %strong Entwicklung
             %dd Umsetzung der architekturkonformen, funktionalen Anforderungen. Dazu gehören auch das Schreiben von Testfällen um die Funktionalität automatisch zu verifizieren und damit den Betrieb und die Weiterentwicklung sicherzustellen.
 
             %hr
@@ -108,12 +127,18 @@
             mit den folgenden Technologien:
 
           %ul.list-inline.specialized
-            %li.label= link_to 'HTML5', 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5', target: '_blank'
-            %li.label= link_to 'CSS3', 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3', target: '_blank'
-            %li.label= link_to 'JavaScript', 'https://developer.mozilla.org/en/docs/Web/JavaScript', target: '_blank'
-            %li.label= link_to 'CoffeeScript', 'http://coffeescript.org/', target: '_blank'
-            %li.label= link_to 'Ruby', 'https://www.ruby-lang.org/en/', target: '_blank'
-            %li.label= link_to 'Node', 'http://nodejs.org/', target: '_blank'
+            %li.label
+              %strong= link_to 'HTML5', 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5', target: '_blank'
+            %li.label
+              %strong= link_to 'CSS3', 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3', target: '_blank'
+            %li.label
+              %strong= link_to 'JavaScript', 'https://developer.mozilla.org/en/docs/Web/JavaScript', target: '_blank'
+            %li.label
+              %strong= link_to 'CoffeeScript', 'http://coffeescript.org/', target: '_blank'
+            %li.label
+              %strong= link_to 'Ruby', 'https://www.ruby-lang.org/en/', target: '_blank'
+            %li.label
+              %strong= link_to 'Node', 'http://nodejs.org/', target: '_blank'
 
           %p
             Um nicht das Rad ständig neu zu erfinden, setze ich moderne Frameworks wie z.B.
@@ -125,16 +150,20 @@
             ein.
 
           %p
-            Für kostengünstige
-            %i Online-Shops
-            setze ich bevorzugt
-            = link_to 'Shopify', 'http://www.shopify.com/?ref=mkse'
-            ein, ich fertige aber auch Online-Shops auf Basis anderer Produkte.
+            Für den Einstieg in das
+            %em Ecommerce
+            entwickle ich kostengünstige
+            %em Onlineshops
+            mit
+            = succeed '.' do
+              = link_to 'Shopify', 'http://www.shopify.com/?ref=mkse'
+            Ich fertige aber auch massgeschneiderte Internet-Shops für ihren
+            %em Ecommerce Shop.
 
           %blockquote
             Technologien ändern sich stetig, Programmiersprachen kommen und gehen; die darunterliegenden Konzepte sind oft die gleichen und entwickeln sich nur langsam. Durch kontinuierliches Lernen und Experimentieren bleibe ich am Puls der Zeit. In meiner bisherigen Laufbahn habe ich produktive Systeme mit folgenden Technologien, Sprachen, Frameworks und Applikationsservern entwickelt:
             %em Assembler, Basic, C, C++, Pascal, Lingo, TCL, Delphi, PHP, ASP, ColdFusion, Java, JEE, JSF, XML, XSLT, SOAP, RPC, Python, ContentServ, JBoss, Vignette, Wordpress, Radiant, Spring, Struts
-            und viele mehr die ich schon längst wieder vergessen habe...
+            und noch viele mehr...
 
           %i.fa.fa-html5.fa-4x
           %i.fa.fa-css3.fa-4x
@@ -142,10 +171,10 @@
       %section#references
         .container
           %h2 Referenzen
-          %p In den letzten Jahrzehnten durfte ich an unzähligen Projekten mitarbeiten. Hier eine kleine Auswahl der aktuelleren Projekte:
+          %p In den letzten Jahrzehnten durfte ich an unzähligen Projekten mitarbeiten. Hier eine Auswahl an Projekte:
 
           .row.thumbnails
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/mobilezone.jpg'
@@ -163,7 +192,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.mobilezone.ch', 'http://www.mobilezone.ch', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/recomy.jpg'
@@ -182,7 +211,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.recomy.com', 'https://www.recomy.com', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/easysmokers.jpg'
@@ -197,7 +226,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.easysmokers.ch', 'http://www.easysmokers.ch', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/vdr.jpg'
@@ -212,7 +241,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.valse-des-roses.ch', 'http://www.valse-des-roses.ch', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/turquoise-istanbul.jpg'
@@ -227,7 +256,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'shop.turquoise-istanbul.com', 'http://shop.turquoise-istanbul.com', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/mps.jpg'
@@ -242,7 +271,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.muellerps.ch', 'http://www.muellerps.ch', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/einfachming.jpg'
@@ -256,7 +285,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.einfachming.ch', 'http://www.einfachming.ch', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/thewayofthestone.jpg'
@@ -271,7 +300,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.thewayofthestone.ch', 'http://www.thewayofthestone.ch', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/weixelbaumer-partner.jpg'
@@ -285,7 +314,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.weixelbaumer-partner.ch', 'http://www.weixelbaumer-partner.ch', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/sagenweg.jpg'
@@ -301,7 +330,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.freiaemtersagenweg.ch', 'http://www.freiaemtersagenweg.ch', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/baumnatur.jpg'
@@ -315,7 +344,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.baumnatur.ch', 'http://www.baumnatur.ch', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-left
+            .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/backnische.jpg'
@@ -350,9 +379,12 @@
               %tbody
                 %tr
                   %td.text-center
-                    = link_to 'https://github.com/guard', class: 'animate animate-right', target: '_blank' do
+                    = link_to 'https://github.com/guard', class: 'animate animate-left', target: '_blank' do
                       = image_tag 'guard.png'
-                  %td Ruby, CoffeeScript
+                  %td
+                    = succeed ',' do
+                      %em Ruby
+                      %em CoffeeScript
                   %td
                     %p
                       = link_to 'https://github.com/guard/guard', target: '_blank' do
@@ -374,8 +406,11 @@
 
                 %tr
                   %td.text-center
-                    %h2.animate.animate-right Haml-Coffee
-                  %td CoffeeScript, Ruby
+                    %h2.animate.animate-left Haml-Coffee
+                  %td
+                    = succeed ',' do
+                      %em CoffeeScript
+                    %em Ruby
                   %td
                     %p
                       = link_to 'https://github.com/netzpirat/haml-coffee', target: '_blank' do
@@ -396,9 +431,12 @@
                       zum Testen bereit.
                 %tr
                   %td.text-center
-                    = link_to 'https://github.com/coffeedoc', class: 'animate animate-right', target: '_blank' do
+                    = link_to 'https://github.com/coffeedoc', class: 'animate animate-left', target: '_blank' do
                       = image_tag 'codo.png'
-                  %td CoffeeScript, Node
+                  %td
+                    = succeed ',' do
+                      %em CoffeeScript
+                    %em Node
                   %td
                     %p
                       = link_to 'https://github.com/coffeedoc/codo', target: '_blank' do
@@ -413,7 +451,7 @@
                       anderem von Dropbox verwendet.
 
           %p.github
-            %i.fa.fa-github.fa-10x.pull-right.animate.animate-left
+            %i.fa.fa-github.fa-10x.pull-right.animate.animate-right
             Alle meine Open-Source Projekte sind auf GitHub zu finden, entweder unter
             = link_to 'FlinkFinger', 'https://github.com/flinkfinger', target: '_blank'
             oder meinem

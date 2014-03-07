@@ -10,6 +10,7 @@ section#references {
     .thumbnail {
       @include perspective(600px);
 
+      cursor: help;
       position: relative;
       width: 240px;
       height: 265px;
