@@ -36,3 +36,14 @@
 		 -o-animation-fill-mode: both;
 			animation-fill-mode: both;
 }
+
+.zoom {
+  @include transition-property(all);
+  @include transition-duration(0.5s);
+
+  &:hover {
+    @include transition-property(all);
+    @include transition-duration(0.2s);
+    @include transform(scale(1.05));
+  }
+}
