@@ -338,6 +338,20 @@
             .col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
+                  = image_tag 'references/giger-architektur.jpg'
+                .back
+                  %h2.text-center Giger Architektur
+
+                  %ul.text-center.list-unstyled
+                    %li Entwicklung
+
+                  .reference
+                    .fa.fa-external-link.fa-2x
+                    = link_to 'www.giger-architektur.ch', 'http://www.giger-architektur.ch', target: '_blank'
+
+            .col-xs-6.col-md-3.animate.animate-bottom
+              .thumbnail
+                .front
                   = image_tag 'references/baumnatur.jpg'
                 .back
                   %h2.text-center BaumNatur
@@ -349,7 +363,7 @@
                     .fa.fa-external-link.fa-2x
                     = link_to 'www.baumnatur.ch', 'http://www.baumnatur.ch', target: '_blank'
 
-            .col-xs-6.col-md-3.animate.animate-bottom
+            -#.col-xs-6.col-md-3.animate.animate-bottom
               .thumbnail
                 .front
                   = image_tag 'references/backnische.jpg'

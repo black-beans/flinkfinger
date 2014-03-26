@@ -15,7 +15,7 @@ section#references {
       cursor: help;
       position: relative;
       width: 240px;
-      height: 265px;
+      height: 335px;
 
       .front {
         @include transition(all 0.4s linear);
@@ -27,13 +27,13 @@ section#references {
         left: 5px;
 
         width: 230px;
-        height: 255px;
+        height: 325px;
 
         z-index: 900;
 
         img {
           width: 230px;
-          height: 255px;
+          height: 325px;
         }
       }
 
@@ -50,7 +50,7 @@ section#references {
         left: 5px;
 
         width: 230px;
-        height: 255px;
+        height: 325px;
 
         padding: 20px;
         z-index: 800;
